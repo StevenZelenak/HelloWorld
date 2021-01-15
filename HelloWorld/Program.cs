@@ -7,11 +7,39 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
+            //The words that will be tested for syllable count
+            var animals = new string[] { "Triceratops", "Gorilla", "Corgi", "Toucan" };
+
+            //------------------------------------------------------------
+
+            //Question User/Random Animal
+            //------------------------------------------------------------
+
+            string username;
+            string color;
+
+            
+
+            Console.WriteLine("Please enter a username you would like to use: ");
+            username = Console.ReadLine();
+
+            Console.WriteLine($"\nHello {username} glad to have you on board!\n");
+            Console.WriteLine($"Ok so {username} I am going to need you to enter you favorite color please:");
+            color = Console.ReadLine();
+
+            Random rand = new Random();
+            int index = rand.Next(animals.Length);
+
+            Console.WriteLine($"\nWould you like to have a {color.ToLower()} {animals[index].ToLower()}?\n\n");
+
+            Console.WriteLine("---------------------------------------------------------------------------------------------------");
+
+            //------------------------------------------------------------
+
             //The Syllable Counter
             //--------------------------------------------
 
-            //The words that will be tested for syllable count
-            var animals = new string[] { "Triceratops", "Gorilla", "Corgi", "Toucan" };
+
             //The vowels that the words are going to be compared against
             var vowels = new char[] { 'a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U', 'y', 'Y' };
   
@@ -89,10 +117,7 @@ namespace HelloWorld
 
             Console.WriteLine("---------------------------------------------------------------------------------------------------");
 
-            //------------------------------------------------------------
-
-            //Three different greetings
-            //------------------------------------------------------------
+            
         }
     }
 }
