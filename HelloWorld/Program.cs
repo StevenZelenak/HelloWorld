@@ -18,8 +18,6 @@ namespace HelloWorld
             string username;
             string color;
 
-            
-
             Console.WriteLine("Please enter a username you would like to use: ");
             username = Console.ReadLine();
 
@@ -105,7 +103,7 @@ namespace HelloWorld
                     Console.WriteLine("Maaaaaaaaaaagggiiiiiiic Maaaaaaaannnn! Dream on honey you can't catch this!");
                     break;
                 case "finn":
-                    Console.WriteLine("Oh hey! What's up bp.");
+                    Console.WriteLine("Oh hey! Ready to go on an adventure?");
                     break;
                 case "jake":
                     Console.WriteLine("Hi, you want to go make a sandwhich or something?");
@@ -117,7 +115,6 @@ namespace HelloWorld
 
             Console.WriteLine("---------------------------------------------------------------------------------------------------");
 
-            
         }
     }
 }
